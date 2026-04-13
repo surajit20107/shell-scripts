@@ -1,3 +1,5 @@
+#!/bin/bash
+
 read -p "Enter first number: " x
 read -p "Enter second number: " y
 
@@ -13,4 +15,4 @@ echo "Subtraction using expr: $sub"
 
 # using $(()) arithmatic expansion
 echo "Division using arithmatic expansion: $(($x / $y))"
-
+echo "Remainder using arith exp: $(($x % $y))"
