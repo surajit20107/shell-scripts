@@ -6,6 +6,13 @@ if [[ $# -lt 2 ]]; then
 fi
 
 echo "You passed $# argumets" # show arguments count
-echo "Your arguments: $@" # show all arguments
+echo "Your arguments: $@" # show all argument
+
+echo "Looping through arguments"
+for arg in $@
+do
+	echo $arg
+done
+
 echo "Your first argument: $1"
 echo "Your second argument: $2"
